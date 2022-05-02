@@ -1,0 +1,577 @@
+@mixin body {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border {
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 7em;
+    width: 17em;
+}
+
+@mixin hover {
+    background-color: #484848;
+    opacity: 100%;
+}
+
+body {
+    @include body;
+    background: rgb(0,56,111);
+    background: linear-gradient(107deg, rgba(0,56,111,1) 0%, rgba(0,192,219,1) 100%);
+}
+
+.calendar-title {
+    @include align;
+    font-size: 40px;
+    padding: 20px;
+    font-family: sans-serif;
+    color: white;
+    animation-name: title;
+    animation-duration: 4s;
+}
+
+@keyframes title {
+    from {color: white}
+    to {color: goldenrod}
+}
+
+.calendar-title:hover {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.days-of-the-week {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+h1 {
+    padding-left: 92px;
+}
+
+// Sunday styles
+
+
+.days-of-the-week > .sunday h1 {
+    color: white;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: #c3c3c3;
+    opacity: 30%;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: white;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: white;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-three:hover {
+    @include hover;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: white;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: white;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: white;
+}
+
+.days-of-the-week > .sunday > .sunday-numbers > .sunday-six:hover {
+    @include hover;
+}
+
+// Monday styles
+
+.days-of-the-week > .monday h1 {
+    color: red;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: #c3c3c3;
+    opacity: 30%;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: red;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: red;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-three:hover {
+    @include hover;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: red;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: red;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: red;
+}
+
+.days-of-the-week > .monday > .monday-numbers > .monday-six:hover {
+    @include hover;
+}
+
+// Tuesday styles
+
+.days-of-the-week > .tuesday h1 {
+    color: goldenrod;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: #c3c3c3;
+    opacity: 30%;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: goldenrod;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: goldenrod;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-three:hover {
+    @include hover;
+}
+
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: goldenrod;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: goldenrod;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: white;
+    opacity: 20%;
+}
+
+.days-of-the-week > .tuesday > .tuesday-numbers > .tuesday-six:hover {
+    @include hover;
+}
+
+// Wednesday styles
+
+.days-of-the-week > .wednesday h1 {
+    padding-left: 68px;
+    color: yellow;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: #c3c3c3;
+    opacity: 30%;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: yellow;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: yellow;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-three:hover {
+    @include hover;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: yellow;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: yellow;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: white;
+    opacity: 20%;
+}
+
+.days-of-the-week > .wednesday > .wednesday-numbers > .wednesday-six:hover {
+    @include hover;
+}
+
+// Thursday styles
+
+.days-of-the-week > .thursday h1 {
+    padding-left: 74px;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: #c3c3c3;
+    opacity: 30%;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-three:hover {
+    @include hover;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: white;
+    opacity: 20%;
+}
+
+.days-of-the-week > .thursday > .thursday-numbers > .thursday-six:hover {
+    @include hover;
+}
+
+// Friday styles
+
+.days-of-the-week > .friday h1 {
+    color: blue;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: #c3c3c3;
+    opacity: 30%;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: blue;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: blue;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-three:hover {
+    @include hover;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: blue;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: blue;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: white;
+    opacity: 20%;
+}
+
+.days-of-the-week > .friday > .friday-numbers > .friday-six:hover {
+    @include hover;
+}
+
+// Saturday styles
+
+.days-of-the-week > .saturday h1 {
+    padding-left: 74px;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-one {
+    @include border;
+    @include align;
+    align-items: baseline;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-one:hover {
+    @include hover;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-two {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-two:hover {
+    @include hover;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-three {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-three:hover {
+    @include hover;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-four {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-four:hover {
+    @include hover;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-five {
+    @include border;
+    @include align;
+    align-items: baseline;
+    color: rgb(144, 230, 14);
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-five:hover {
+    @include hover;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-six {
+    @include border;
+    @include align;
+    align-items: baseline;
+    background-color: white;
+    opacity: 20%;
+}
+
+.days-of-the-week > .saturday > .saturday-numbers > .saturday-six:hover {
+    @include hover;
+}
